@@ -1,0 +1,45 @@
+<odoo>
+    <record id="view_biblioteca_libro_tree" model="ir.ui.view"> [cite: 100, 146]
+        <field name="name">biblioteca.libro.tree</field> [cite: 101]
+        <field name="model">biblioteca.libro</field> [cite: 102]
+        <field name="arch" type="xml"> [cite: 103]
+            <tree string="Libros"> [cite: 104]
+                <field name="name"/> [cite: 105]
+                <field name="autor"/> [cite: 106]
+                <field name="fecha_publicacion"/> [cite: 107]
+                <field name="disponible"/> [cite: 108]
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_biblioteca_libro_form" model="ir.ui.view"> [cite: 113, 146]
+        <field name="name">biblioteca.libro.form</field> [cite: 114]
+        <field name="model">biblioteca.libro</field> [cite: 115]
+        <field name="arch" type="xml"> [cite: 116]
+            <form string="Libro"> [cite: 117]
+                <sheet> [cite: 118]
+                    <group> [cite: 119]
+                        <field name="name"/> [cite: 120]
+                        <field name="autor"/> [cite: 121]
+                        <field name="fecha_publicacion"/> [cite: 122]
+                        <field name="paginas"/> [cite: 123]
+                        <field name="disponible"/> [cite: 124]
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_biblioteca_libro" model="ir.actions.act_window"> [cite: 132, 146]
+        <field name="name">Libros</field> [cite: 133]
+        <field name="res_model">biblioteca.libro</field> [cite: 134]
+        <field name="view_mode">tree, form</field> [cite: 135]
+    </record>
+
+    <menuitem id="menu_biblioteca_root" name="Biblioteca"/> [cite: 138, 148]
+
+    <menuitem id="menu_biblioteca_libro" [cite: 140]
+              [cite_start]parent="menu_biblioteca_root" [cite: 141]
+              [cite_start]name="Libros" [cite: 142]
+              [cite_start]action="action_biblioteca_libro"/> [cite: 143, 149]
+</odoo>
