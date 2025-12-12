@@ -1,13 +1,6 @@
 {
-    "name": "Biblioteca Alumno",
+    "name": "Dummy Module",
     "version": "1.0",
-    "summary": "Módulo de práctica: gestión de libros",
-    "author": "Alumno DAM",
-    "category": "Teaching",
-    "depends": ["base"],
-    "data": [
-        "views/biblioteca_libro_views.xml",
-    ],
+    "summary": "Modulo de ejemplo vacío",
     "installable": True,
-    "application": True,
 }
